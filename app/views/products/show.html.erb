@@ -2,7 +2,7 @@
 
 <ul>
   <% @reviews.each do |review| %>
-  <li><%= link_to review.name, product_review_path(@product, review) %></li>
+  <li><%= link_to review.author, product_review_path(@product, review) %></li>
   <li><%= review.content_body %></li>
   <% end %>
 </ul>
